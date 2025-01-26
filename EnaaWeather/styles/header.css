@@ -26,48 +26,6 @@ body{
     display: flex;
     justify-content: flex-end;
   }
-  .navigation{
-    margin-right: 40px;
-  }
-  .nav-ul{
-    width: 420px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .nav-ul li a{
-    color: rgb(212, 212, 212);
-    font-size: 20px;
-  }
-  #active{
-    text-decoration: underline;
-    font-weight: bold;
-    text-decoration-color: antiquewhite;
-  }
-  main{
-    height: 420px;
-    margin-top: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  } 
-  #boxes{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .box{
-    background: linear-gradient(to top left, #333333, #AD36CB);
-    height: 280px;
-    width: 40%;
-    border-radius: 20px;
-    color: white;
-    font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
   #input{
     margin-bottom: 50px;
     width: 41%;
@@ -75,7 +33,6 @@ body{
     height: 40px;
     border-radius: 25px;
     border: none;
-    position: relative;
   }
   #input:focus{
     border: none;
@@ -83,60 +40,30 @@ body{
   }
   #search-icon{
     width: 24px;
-    z-index: 20;
-    left: 30%;
-    top: 20px;
-    position: absolute;
-    transform: translateY(-50%);
   }
   #search-box{
-    width: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    gap: 16px;
+  }
+  #search-click{
     display: flex;
     justify-content: center;
+    border-radius: 25px;
+  }
+  #search-button{
     position: relative;
+    width: 100px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 8px 8px 24px #AD36CB inset;
+    background-color: rgb(114, 114, 114);
+    transition: box-shadow 0.3s ease-in-out;
+    will-change: box-shadow;
   }
-  #location-icon{
-    width: 16px;
-  }
-  .city-name{
-    margin-left: 16px;
-    margin-top: 10px;
-  }
-  .heat-box{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-  }
-  #temperature{
-    width: 30px;
-    margin-bottom: 14px;
-  }
-  #weather-icon{
-    width: 50px;
-    margin-bottom: 8px;
-  }
-  #day-date{
-    font-size: 12px;
-    margin-left: 16px;
-    text-decoration: underline;
-  }
-  #temp-info{
-    width: 100%;
-    display: flex;
-    white-space: nowrap;
-    align-items: center;
-    justify-content: space-between;
-    height: 130px;
-    align-items: end;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 24px;
-  }
-  .infos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height: 8px;
+  #search-button:hover{
+    box-shadow: 2px 8px  24px #AD36CB;
   }

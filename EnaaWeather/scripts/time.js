@@ -12,9 +12,7 @@ function updateTime(){
   let hour = date.getHours();
   let minutes = date.getMinutes();
 
-  //header time
   document.querySelector('.day-time').innerText = `${hour}:${minutes}`;
 
-  //box time
   document.getElementById('day-date').innerText = `${monthName} ${day}, ${dayName}`;
 }
